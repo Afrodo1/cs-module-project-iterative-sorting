@@ -1,6 +1,8 @@
 def linear_search(arr, target):
     # Your code here
-
+    for i in range(0, len(arr)):
+        if target == arr[i]:
+            return i
 
     return -1   # not found
 
@@ -30,7 +32,8 @@ def binary_search(arr, target):
 
 a = [1,2,3,4,5,6,7,8,9]
 
-print(binary_search(a,9))
+# print(binary_search(a,9))
+print(linear_search(a,2))
 
 # half_a = slice(0, len(a)//2)
 
